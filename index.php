@@ -30,6 +30,9 @@ switch($intent) {
     case "contact":
         contact();
         break;
+    case "list":
+        listCont();
+        break;
     default:
         echo "No intent found.";
 }
@@ -246,6 +249,7 @@ function contact() {
     $edit = $_GET["edit"];
     $add = $_GET["add"];
 
+    $userID = "_".$userID."_";
     //Database connection
     $server = "mysql4.000webhost.com";
     $db_username = "a9562517_root";
@@ -270,21 +274,59 @@ function contact() {
             $STH->execute();
             $result = $STH->fetch();
             $cont = $result["CONTACTS"];
-            if($add == "true") {
-                $cont = $cont."_".$userID."_";
+            if($add == "true" and !strpos($cont, $userID) and strpos($cont, $userID) !== 0) {
+                $cont = $cont.$userID;
             } else if($add == "false") {
-                str_replace()
+                $cont = str_replace($userID, "", $cont);
             }
+            $STH = $conn->prepare("UPDATE users SET CONTACTS='$cont'");
+            $STH->execute();
         } else if($edit == "view") {
-            $STH = $conn->prepare("SELECT CONTACTS FROM users WHERE ID = '$id'");
+            $STH = $conn->prepare("SELECT VIEW FROM users WHERE ID = '$id'");
             $STH->execute();
             $result = $STH->fetch();
-            if($add == "true") {
-
+            $view = $result["VIEW"];
+            if($add == "true" and !strpos($view, $userID) and strpos($view, $userID) !== 0) {
+                $view = $view.$userID;
             } else if($add == "false") {
-
+                $view = str_replace($userID, "", $view);
             }
+            $STH = $conn->prepare("UPDATE users SET VIEW='$view'");
+            $STH->execute();
         }
+    } else {
+        echo "Failure";
+    }
+}
+
+function listCont() {
+    $token = $_GET["token"];
+    
+    //Database connection
+    $server = "mysql4.000webhost.com";
+    $db_username = "a9562517_root";
+    $db_password = "admin1";
+    $database = "a9562517_db";
+
+
+    $conn = new PDO("mysql:host=$server;dbname=$database", $db_username, $db_password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $STH = $conn->prepare("SELECT ID FROM users WHERE TOKEN = '$token'");
+
+    $STH->execute();
+
+    $result = $STH->fetch();
+    $id = $result["ID"];
+
+    if($result["ID"] !== null) {
+        $STH = $conn->prepare("SELECT CONTACTS FROM users WHERE ID = '$id'");
+        $STH->execute();
+        
+        $result = $STH->fetch();
+        
+        echo $result["CONTACTS"];
     } else {
         echo "Failure";
     }
