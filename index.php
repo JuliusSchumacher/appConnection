@@ -220,9 +220,7 @@ function view() {
                 $STH->execute();
 
                 $result = $STH->fetch();
-                foreach ($result as $res) {
-                    echo $res."<br>";
-                }
+                echo $result["NME"]."_".$result["TIME"]."_".$result["POSITION"];
             } else {
                 //Show user info of query
                 $STH = $conn->prepare("SELECT NME FROM users WHERE ID = '$query'");
@@ -230,9 +228,7 @@ function view() {
                 $STH->execute();
 
                 $result = $STH->fetch();
-                foreach ($result as $res) {
-                    echo $res."<br>";
-                }
+                echo $result["NME"];
             }
         } else {
             echo "Failure";
