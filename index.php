@@ -33,6 +33,9 @@ switch($intent) {
     case "list":
         listCont();
         break;
+    case "views":
+        canView();
+        break;
     default:
         echo "No intent found.";
 }
@@ -232,10 +235,10 @@ function view() {
                 echo $result["NME"];
             }
         } else {
-            echo "Failure 1";
+            echo "Failure";
         }
     } else {
-        echo "Failure 2";
+        echo "Failure";
     }
 }
 
@@ -324,6 +327,47 @@ function listCont() {
         $result = $STH->fetch();
         
         echo $result["CONTACTS"];
+    } else {
+        echo "Failure";
+    }
+}
+
+function canView() {
+    $token = $_GET["token"];
+    $query = $_GET["query"];
+
+    //Database connection
+    $server = "mysql4.000webhost.com";
+    $db_username = "a9562517_root";
+    $db_password = "admin1";
+    $database = "a9562517_db";
+
+
+    $conn = new PDO("mysql:host=$server;dbname=$database", $db_username, $db_password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $STH = $conn->prepare("SELECT ID FROM users WHERE TOKEN = '$token'");
+
+    $STH->execute();
+
+    $result = $STH->fetch();
+    $id = $result["ID"];
+
+    if($result["ID"] !== null) {
+        $STH = $conn->prepare("SELECT VIEW FROM users WHERE ID = '$id'");
+        $STH->execute();
+
+        $result = $STH->fetch();
+
+        $view = $result["VIEW"];
+
+        if(strpos($view, $query) || strpos($view, $query) === 0) {
+            echo "true";
+        } else {
+            echo "false";
+        }
+
     } else {
         echo "Failure";
     }

@@ -25,28 +25,30 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.14574">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.38116592">
+              <caret line="180" column="28" selection-start-line="180" selection-start-column="28" selection-end-line="180" selection-end-column="28" />
               <folding>
-                <marker date="1458056567573" expanded="true" signature="1056:1115" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="1351:1399" placeholder="UPDATE users... " />
-                <marker date="1458056567573" expanded="true" signature="1994:2033" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="2153:2246" placeholder="INSERT INTO users... " />
-                <marker date="1458056567573" expanded="true" signature="2885:2975" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="3716:3759" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="3905:3968" placeholder="UPDATE users... " />
-                <marker date="1458056567573" expanded="true" signature="4592:4635" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="4839:4903" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="5085:5145" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="5353:5410" placeholder="SELECT NME, " />
-                <marker date="1458056567573" expanded="true" signature="5673:5714" placeholder="SELECT NME F... users" />
-                <marker date="1458056567573" expanded="true" signature="6607:6650" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="6833:6876" placeholder="SELECT CONTA... users" />
-                <marker date="1458056567573" expanded="true" signature="7267:7300" placeholder="UPDATE users... " />
-                <marker date="1458056567573" expanded="true" signature="7405:7444" placeholder="SELECT VIEW " />
-                <marker date="1458056567573" expanded="true" signature="7831:7860" placeholder="UPDATE users... " />
-                <marker date="1458056567573" expanded="true" signature="8395:8438" placeholder="SELECT ID FR... users" />
-                <marker date="1458056567573" expanded="true" signature="8584:8627" placeholder="SELECT CONTA... users" />
+                <marker date="1458064159683" expanded="true" signature="1108:1167" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="1403:1451" placeholder="UPDATE users... " />
+                <marker date="1458064159683" expanded="true" signature="2046:2085" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="2205:2298" placeholder="INSERT INTO users... " />
+                <marker date="1458064159683" expanded="true" signature="2937:3027" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="3768:3811" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="3957:4020" placeholder="UPDATE users... " />
+                <marker date="1458064159683" expanded="true" signature="4644:4687" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="4891:4955" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="5137:5197" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="5405:5462" placeholder="SELECT NME, " />
+                <marker date="1458064159683" expanded="true" signature="5725:5766" placeholder="SELECT NME F... users" />
+                <marker date="1458064159683" expanded="true" signature="6655:6698" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="6881:6924" placeholder="SELECT CONTA... users" />
+                <marker date="1458064159683" expanded="true" signature="7315:7348" placeholder="UPDATE users... " />
+                <marker date="1458064159683" expanded="true" signature="7453:7492" placeholder="SELECT VIEW " />
+                <marker date="1458064159683" expanded="true" signature="7879:7908" placeholder="UPDATE users... " />
+                <marker date="1458064159683" expanded="true" signature="8443:8486" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="8632:8675" placeholder="SELECT CONTA... users" />
+                <marker date="1458064159683" expanded="true" signature="9305:9348" placeholder="SELECT ID FR... users" />
+                <marker date="1458064159683" expanded="true" signature="9494:9533" placeholder="SELECT CONTA... users" />
               </folding>
             </state>
           </provider>
@@ -194,7 +196,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -242,28 +244,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.14574">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.38116592">
+          <caret line="180" column="28" selection-start-line="180" selection-start-column="28" selection-end-line="180" selection-end-column="28" />
           <folding>
-            <marker date="1458056567573" expanded="true" signature="1056:1115" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="1351:1399" placeholder="UPDATE users... " />
-            <marker date="1458056567573" expanded="true" signature="1994:2033" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="2153:2246" placeholder="INSERT INTO users... " />
-            <marker date="1458056567573" expanded="true" signature="2885:2975" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="3716:3759" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="3905:3968" placeholder="UPDATE users... " />
-            <marker date="1458056567573" expanded="true" signature="4592:4635" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="4839:4903" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="5085:5145" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="5353:5410" placeholder="SELECT NME, " />
-            <marker date="1458056567573" expanded="true" signature="5673:5714" placeholder="SELECT NME F... users" />
-            <marker date="1458056567573" expanded="true" signature="6607:6650" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="6833:6876" placeholder="SELECT CONTA... users" />
-            <marker date="1458056567573" expanded="true" signature="7267:7300" placeholder="UPDATE users... " />
-            <marker date="1458056567573" expanded="true" signature="7405:7444" placeholder="SELECT VIEW " />
-            <marker date="1458056567573" expanded="true" signature="7831:7860" placeholder="UPDATE users... " />
-            <marker date="1458056567573" expanded="true" signature="8395:8438" placeholder="SELECT ID FR... users" />
-            <marker date="1458056567573" expanded="true" signature="8584:8627" placeholder="SELECT CONTA... users" />
+            <marker date="1458064159683" expanded="true" signature="1108:1167" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="1403:1451" placeholder="UPDATE users... " />
+            <marker date="1458064159683" expanded="true" signature="2046:2085" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="2205:2298" placeholder="INSERT INTO users... " />
+            <marker date="1458064159683" expanded="true" signature="2937:3027" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="3768:3811" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="3957:4020" placeholder="UPDATE users... " />
+            <marker date="1458064159683" expanded="true" signature="4644:4687" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="4891:4955" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="5137:5197" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="5405:5462" placeholder="SELECT NME, " />
+            <marker date="1458064159683" expanded="true" signature="5725:5766" placeholder="SELECT NME F... users" />
+            <marker date="1458064159683" expanded="true" signature="6655:6698" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="6881:6924" placeholder="SELECT CONTA... users" />
+            <marker date="1458064159683" expanded="true" signature="7315:7348" placeholder="UPDATE users... " />
+            <marker date="1458064159683" expanded="true" signature="7453:7492" placeholder="SELECT VIEW " />
+            <marker date="1458064159683" expanded="true" signature="7879:7908" placeholder="UPDATE users... " />
+            <marker date="1458064159683" expanded="true" signature="8443:8486" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="8632:8675" placeholder="SELECT CONTA... users" />
+            <marker date="1458064159683" expanded="true" signature="9305:9348" placeholder="SELECT ID FR... users" />
+            <marker date="1458064159683" expanded="true" signature="9494:9533" placeholder="SELECT CONTA... users" />
           </folding>
         </state>
       </provider>
