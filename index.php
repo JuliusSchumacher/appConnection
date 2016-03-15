@@ -195,7 +195,8 @@ function view() {
     $STH->execute();
 
     $result = $STH->fetch();
-    $id = "%_".$result["ID"]."_%";
+    $id = "%".$result["ID"]."_%";
+
 
     //Does Query exist and is user in contacts?
     if($result["ID"] !== null) {
@@ -231,10 +232,10 @@ function view() {
                 echo $result["NME"];
             }
         } else {
-            echo "Failure";
+            echo "Failure 1";
         }
     } else {
-        echo "Failure";
+        echo "Failure 2";
     }
 }
 
@@ -245,7 +246,7 @@ function contact() {
     $edit = $_GET["edit"];
     $add = $_GET["add"];
 
-    $userID = "_".$userID."_";
+    $userID = $userID."_";
     //Database connection
     $server = "mysql4.000webhost.com";
     $db_username = "a9562517_root";
