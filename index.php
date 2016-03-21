@@ -279,7 +279,7 @@ function contact() {
             } else if($add == "false") {
                 $cont = str_replace($userID, "", $cont);
             }
-            $STH = $conn->prepare("UPDATE users SET CONTACTS='$cont'");
+            $STH = $conn->prepare("UPDATE users SET CONTACTS='$cont' WHERE ID = '$id'");
             $STH->execute();
         } else if($edit == "view") {
             $STH = $conn->prepare("SELECT VIEW FROM users WHERE ID = '$id'");
@@ -291,7 +291,7 @@ function contact() {
             } else if($add == "false") {
                 $view = str_replace($userID, "", $view);
             }
-            $STH = $conn->prepare("UPDATE users SET VIEW='$view'");
+            $STH = $conn->prepare("UPDATE users SET VIEW='$view' WHERE ID = '$id'");
             $STH->execute();
         }
     } else {
