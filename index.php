@@ -127,7 +127,7 @@ function search() {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //Find the query in name, mail or number
-    $STH = $conn->prepare("SELECT ID FROM users WHERE NME LIKE '$query' OR MAIL LIKE '$query' OR NUMBER LIKE '$query'");
+    $STH = $conn->prepare("SELECT ID FROM users WHERE MAIL LIKE '$query' OR NUMBER LIKE '$query'");
 
     $STH->execute();
 
@@ -235,7 +235,13 @@ function view() {
                 echo $result["NME"];
             }
         } else {
-            echo "Failure";
+            //Show user info of query
+            $STH = $conn->prepare("SELECT NME FROM users WHERE ID = '$query'");
+
+            $STH->execute();
+
+            $result = $STH->fetch();
+            echo $result["NME"];
         }
     } else {
         echo "Failure";
